@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    list-style-type: none;
+    color: white;
+}
+
+nav .brand img{
+    height: 44px;
+    width: 44px;
+}
+
+nav .brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+nav li{
+    padding: 0 12px;
+}
+
+.container{
+    min-height: 70vh;
+    width: 70%;
+    background-color: black;
+    border-radius: 12px;
+    margin: 23px auto;
+    padding: 34px;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+.bottom{
+    height: 70px;
+    background-color: black;
+    position:sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#myProgressBar{
+    width: 90%;
+    cursor: pointer;
+}
+
+.icons{
+    margin: 10px 0;
+}
+
+.icons i{
+    cursor: pointer;
+}
+/* .songList{
+    display: flex;
+    flex-direction: column;
+} */
+.songItem{
+    height: 40px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    border-radius: 34px;
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    
+}
+
+.songItem .name{
+    text-align: center;
+}
+
+.songItem img{
+    height: 35px;
+    width: 35px;
+    border-radius: 26px;
+}
+
+.songItem i{
+    cursor: pointer;
+}
+
+.songListContainer{
+    margin-top: 30px;
+}
+
+.songInfo{
+    color: white;
+    position: absolute;
+    left: 15vh;
+}
+
+.songInfo img{
+    width: 50px;
+    /* height: 20px; */
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+
+@media screen and (max-width:750px){
+    .songItem{
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .songInfo{
+        position: static;
+        
+    }
+
+    .bottom{
+        height: 130px;
+    }
+
+}
