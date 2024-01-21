@@ -102,8 +102,8 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach(element=>{
 })
 
 document.getElementById('next').addEventListener('click',()=>{{
-    if(songIndex>9){
-        songIndex = 0;
+    if(songIndex>9 || songIndex==undefined){
+        songIndex = 1;
     }else{
         songIndex+=1;
     }
@@ -118,8 +118,8 @@ document.getElementById('next').addEventListener('click',()=>{{
 }})
 
 document.getElementById('back').addEventListener('click',()=>{{
-    if(songIndex<=0){
-        songIndex=9;
+    if(songIndex<=0 || songIndex == undefined){
+        songIndex=10;
     }else{
         songIndex-=1;
     }
