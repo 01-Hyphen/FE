@@ -11,7 +11,15 @@ body{
     background-color: antiquewhite;
     font-family: 'Ubuntu' sans-serif;
 }
+nav{
+    position: sticky;
+    top: 0;
+}
 
+nav a{
+    color: white;
+    text-decoration: none;
+}
 nav ul{
     display: flex;
     align-items: center;
@@ -26,7 +34,11 @@ nav .brand img{
     width: 44px;
 }
 
-nav .brand{
+.nav-element{
+    font-size: large;
+}
+
+nav a{
     display: flex;
     align-items: center;
     font-weight: bolder;
